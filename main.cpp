@@ -9,7 +9,7 @@ void trougao(int n) {
         bool b = false;
         for (int j = 0; j + i < n; j++) {
             if (i & j) cout << "  ";
-            else if ((n - i) % 4 == 0) cout << char(196) << " ";
+            else if ((n - i) % 4 == 0) cout << char(196) << " "; // promeniti char(196) u "-" ako ne radi
             else if ((n - i) % 4 == 1) cout << "^ ";
             else {
                 if (b) cout << "\\ ";
